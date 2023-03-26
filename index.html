@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <title>Assignment solution for module 2</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                padding: 0px;
+                margin: 0px;
+            }
+            h1{
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-bottom: 15px;
+                margin-top: 30px;
+            }
+            p {
+                padding: 15px;
+                width: 90%;
+                height: 150px;
+                margin-right: 10px;
+                margin-left: 10px;
+                font-family: Helvetica;
+                color: rgba(255, 255, 255, 0.411);
+            }
+            .row{
+                width: 100%;
+                padding: 10px;
+                margin: 10px;
+            }
+            .container{
+                margin: 10px;
+                position: relative;
+                background-color: rgb(10, 56, 41);
+                border: 1px black;
+                width: 95%;
+                
+            }
+            .box{
+                border: 2px black;
+                background-color: white;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                padding-left: 6px;
+                padding-right: 6px; 
+                position: absolute;
+                top:10px;
+                right: 10px;
+                clear:left;
+            }
+            @media (min-width: 992px) {
+                .col-lg-4{
+                float: left;
+                border: 1px solid black;
+                }
+                .col-lg-4 {
+                width: 30%;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                .col-md-6{
+                float: left;
+                border: 1px solid black;
+                }
+                .col-md-6 {
+                width: 47%;
+                }
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Our Menu</h1>
+        <div classe="row">
+            <div class="container col-lg-4 col-md-6 ">
+                <div class="box" >Chicken</div>
+                <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis adipisci, iste in autem doloremque quae aperiam, illo vero iure neque quidem dicta quia iusto aliquid quibusdam enim placeat provident!</p></div>
+            <div class="container col-lg-4 col-md-6 ">
+                <div class="box" style="background-color: red; color:antiquewhite "> Beef</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nesciunt iste dolore iusto laboriosam dicta eaque? Nisi cum facere maiores nesciunt aliquid omnis. Aliquid, culpa placeat neque voluptatem assumenda quasi.</p></div>
+            <div style="float: left;" class="container col-lg-4 ">
+                <div class="box"  style="background-color: blueviolet;" >Sushi</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat, eius vel praesentium, animi modi ab ducimus, dicta optio magni doloribus fugit. Laudantium, dignissimos! Veritatis omnis repellat animi autem! Adipisci.</p></div>
+        </div>
+
+    </body>
+</html>
