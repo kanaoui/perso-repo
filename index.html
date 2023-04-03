@@ -1,90 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" >
-        <title>Assignment solution for module 2</title>
-        <style>
-            *{
-                box-sizing: border-box;
-                padding: 0px;
-                margin: 0px;
-            }
-            h1{
-                text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                margin-bottom: 15px;
-                margin-top: 30px;
-            }
-            p {
-                padding: 15px;
-                width: 90%;
-                height: 150px;
-                margin-right: 10px;
-                margin-left: 10px;
-                font-family: Helvetica;
-                color: rgba(255, 255, 255, 0.411);
-            }
-            .row{
-                width: 100%;
-                padding: 10px;
-                margin: 10px;
-            }
-            .container{
-                margin: 10px;
-                position: relative;
-                background-color: rgb(10, 56, 41);
-                border: 1px black;
-                width: 95%;
-                
-            }
-            .box{
-                border: 2px black;
-                background-color: white;
-                padding-top: 2px;
-                padding-bottom: 2px;
-                padding-left: 6px;
-                padding-right: 6px; 
-                position: absolute;
-                top:10px;
-                right: 10px;
-                clear:left;
-            }
-            @media (min-width: 992px) {
-                .col-lg-4{
-                float: left;
-                border: 1px solid black;
-                }
-                .col-lg-4 {
-                width: 30%;
-                }
-            }
+<html lang="en">
 
-            @media (min-width: 768px) and (max-width: 991px) {
-                .col-md-6{
-                float: left;
-                border: 1px solid black;
-                }
-                .col-md-6 {
-                width: 47%;
-                }
-            }
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solution for Module 3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+</head>
 
-        </style>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Food, LLC</h1></a>
+                    </div>
 
-    </head>
-    <body>
-        <h1>Our Menu</h1>
-        <div classe="row">
-            <div class="container col-lg-4 col-md-6 ">
-                <div class="box" >Chicken</div>
-                <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis adipisci, iste in autem doloremque quae aperiam, illo vero iure neque quidem dicta quia iusto aliquid quibusdam enim placeat provident!</p></div>
-            <div class="container col-lg-4 col-md-6 ">
-                <div class="box" style="background-color: red; color:antiquewhite "> Beef</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nesciunt iste dolore iusto laboriosam dicta eaque? Nisi cum facere maiores nesciunt aliquid omnis. Aliquid, culpa placeat neque voluptatem assumenda quasi.</p></div>
-            <div style="float: left;" class="container col-lg-4 ">
-                <div class="box"  style="background-color: blueviolet;" >Sushi</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat, eius vel praesentium, animi modi ab ducimus, dicta optio magni doloribus fugit. Laudantium, dignissimos! Veritatis omnis repellat animi autem! Adipisci.</p></div>
+                    <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs text-center">
+                        <li>
+                            <a href="#chicken-tile"><br class="hidden-xs"> Chicken</a>
+                        </li>
+                        <li>
+                            <a href="#beef-tile"><br class="hidden-xs"> Beef</a>
+                        </li>
+                        <li>
+                            <a href="#sushi-tile"><br class="hidden-xs"> Sushi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main-content" class="container">
+        <h2 id="top-heading" class="text-center">Our Menu</h2>
+        <div id="home-tiles" class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div id="chicken-tile">
+                    <section>
+                        <h3 class="text-center">Chicken</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.
+                        <p>
+                            (End of Chicken section) <a href="#top-heading">Back to Top</a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div id="beef-tile">
+                    <section>
+                        <h3 class="text-center">Beef</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.
+                        </p>
+                        <p>
+                            (End of Beef section) <a href="#top-heading">Back to Top</a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <!-- <div class="clearfix visible-md-block"></div> -->
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div id="sushi-tile">
+                    <section>
+                        <h3 class="text-center">Sushi</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.
+                        </p>
+                        <p>
+                            (End of Sushi section) <a href="#top-heading">Back to Top</a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <!-- <div class="clearfix visible-lg-block"></div> -->
         </div>
+    </div>
+    <div class="clearfix visible-lg-block"></div>
 
-    </body>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+
+</body>
+
 </html>
